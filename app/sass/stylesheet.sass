@@ -1,0 +1,131 @@
+@import "bourbon"
+@import "fonts"
+@import "vars"
+
+h1, h2, h3, h4, h5, h6, span, p
+	margin: 0
+
+*
+	box-sizing: border-box
+
+ul
+  list-style-type: none
+
+body
+  font-family: "helvetica", sans-serif
+  font-size: 14px
+  min-width: 320px
+  overflow-x: hidden
+  background-color: #191919
+  color: rgba(255, 255, 255, 0.6)
+
+img
+  display: block
+  max-width: 100%
+
+a
+  display: inline-block
+
+  &:hover
+    text-decoration: none
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+.btn 
+  font-size: 15px
+  font-weight: 700
+  letter-spacing: 0.9px
+  padding: 18px 45px 17px
+  color: #000
+  background-color: #edc887
+
+  &:hover 
+    color: #000
+
+/********* header *********/
+
+.header 
+  background-image: url('../img/header-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.navigation 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+
+.navigation__container 
+  padding-top: 25px
+  padding-bottom: 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.phone 
+  color: #fff
+
+  &:hover 
+    color: #fff
+    
+.offer__container 
+  padding-top: 235px
+  padding-bottom: 115px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.offer__title 
+  font-family: "helvetica", sans-serif
+  width: 716px
+  text-align: center
+  font-size: 44px
+  font-weight: 300
+  line-height: 59px
+  letter-spacing: 1.76px
+  color: #fff
+  margin-bottom: 45px
+
+.offer__btn 
+  margin-bottom: 205px
+
+.more 
+  font-size: 15px
+  font-weight: 300
+  color: #edc887
+  opacity: 0.4
+  letter-spacing: 0.9px
+  position: relative
+
+  &:hover 
+    color: #edc887
+
+  &:after 
+    position: absolute
+    top: 81px
+    left: 0
+    content: ""
+    display: block
+    width: 111px
+    height: 1px
+    transform: rotate(90deg)
+    background-color: #edc887
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+@import "media"

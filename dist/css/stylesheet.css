@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "helvetica";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HelveticaNeueCyr-Light.eot");
+  src: url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "helvetica";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "helvetica";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"); }
+
+h1, h2, h3, h4, h5, h6, span, p {
+  margin: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  font-family: "helvetica", sans-serif;
+  font-size: 14px;
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #191919;
+  color: rgba(255, 255, 255, 0.6); }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+a {
+  display: inline-block; }
+  a:hover {
+    text-decoration: none; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  padding: 18px 45px 17px;
+  color: #000;
+  background-color: #edc887; }
+  .btn:hover {
+    color: #000; }
+
+/********* header *********/
+.header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.navigation {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+.navigation__container {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.phone {
+  color: #fff; }
+  .phone:hover {
+    color: #fff; }
+
+.offer__container {
+  padding-top: 235px;
+  padding-bottom: 115px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.offer__title {
+  font-family: "helvetica", sans-serif;
+  width: 716px;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 59px;
+  letter-spacing: 1.76px;
+  color: #fff;
+  margin-bottom: 45px; }
+
+.offer__btn {
+  margin-bottom: 205px; }
+
+.more {
+  font-size: 15px;
+  font-weight: 300;
+  color: #edc887;
+  opacity: 0.4;
+  letter-spacing: 0.9px;
+  position: relative; }
+  .more:hover {
+    color: #edc887; }
+  .more:after {
+    position: absolute;
+    top: 81px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 111px;
+    height: 1px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background-color: #edc887; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
