@@ -45,6 +45,7 @@ gulp.task('css-libs', function() {
 	return gulp.src([
 		'app/libs/bootstrap/dist/css/bootstrap.min.css',
 		'app/libs/bootstrap/dist/css/bootstrap-reboot.min.css',
+		'app/libs/FontAwesome/all.css',
 		]) // Выбираем файл для минификации
 		.pipe(concat('libs.min.css'))
 		.pipe(cssmin()) 
