@@ -19,6 +19,34 @@
   src: url("../fonts/HelveticaNeueCyr-Roman.eot");
   src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "fa";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "fa";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fa-light-300.eot");
+  src: url("../fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "fa";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "fa";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"); }
+
 h1, h2, h3, h4, h5, h6, span, p {
   margin: 0; }
 
