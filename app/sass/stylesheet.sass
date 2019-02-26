@@ -18,6 +18,7 @@ ul
 body
   font-family: "helvetica", sans-serif
   font-size: 14px
+  font-weight: 300
   min-width: 320px
   overflow-x: hidden
   background-color: #191919
@@ -33,10 +34,16 @@ a
   &:hover
     text-decoration: none
 
+.fas 
+  margin-right: 7px
+
 .container
   width: 1170px
   margin: 0 auto
   padding: 0
+
+button:active
+  outline: none
 
 .btn 
   font-size: 15px
@@ -45,6 +52,7 @@ a
   padding: 18px 45px 17px
   color: #000
   background-color: #edc887
+  border-radius: 0 5px
 
   &:hover 
     color: #000
@@ -54,6 +62,12 @@ a
   font-weight: 300
   color: #fff
   letter-spacing: 1.4px
+
+.title3 
+  color: #ffffff
+  font-size: 25px
+  font-weight: 300
+  letter-spacing: 1px
 
 .upper-text 
   text-transform: uppercase
@@ -253,6 +267,41 @@ a
 .excellence__text--short 
   width: 190px
 
+/********* samples *********/
+
+.samples__title 
+  margin-bottom: 37px
+
+.form 
+  margin-bottom: 20px
+
+.form__field 
+  width: 270px
+  background: transparent
+  border: none
+  outline: none
+  border-bottom: 1px solid rgba(255, 255, 255, .5)
+  margin-right: 30px
+  margin-bottom: 42px
+  transition: all 0.5s
+  padding-bottom: 5px
+
+  &:hover 
+    border-bottom: 1px solid #edc887
+
+  &::placeholder 
+    color: #ffffff
+    font-size: 14px
+    font-weight: 300
+    line-height: 32px
+    letter-spacing: 0.28px
+
+.samples__text 
+  color: rgba(255, 255, 255, 0.2)
+  font-size: 10px
+  line-height: 32px
+  letter-spacing: 0.2px
+
 /********* montage *********/
 
 .montage__container 
@@ -303,6 +352,66 @@ a
 .montage__link 
   width: 295px
   margin: 0 auto 97px
+
+/********* contacts *********/
+
+.contacts__container 
+  padding-bottom: 40px
+
+.contacts__title 
+  margin-bottom: 70px
+
+.contacts__all 
+  display: flex
+
+.contacts__item 
+  color: #ffffff
+  font-size: 16px
+  font-weight: 300
+  letter-spacing: 0.32px
+  margin-right: 38px
+
+  &:hover
+    color: #ffffff
+
+/********* card *********/
+
+.card
+  position: relative
+  background-image: url('../img/bg-map.png')
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  padding-bottom: 90px
+
+.card__overlay 
+  position: absolute
+  top: -2px
+  left: -2px
+  width: 102%
+  height: 102%
+  background: rgba(25, 25, 25, 0.97)
+
+.map 
+  position: relative
+  z-index: 3
+  width: 870px
+  height: 440px
+
+/********* footer *********/
+
+.footer__container 
+  padding-top: 12px
+  padding-bottom: 70px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.footer__text 
+  color: rgba(255, 255, 255, 0.3)
+  letter-spacing: 0.56px
+
+
 
 
 
