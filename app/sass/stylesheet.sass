@@ -6,12 +6,14 @@
 
 h1, h2, h3, h4, h5, h6, span, p
 	margin: 0
+  padding: 0
 
 *
 	box-sizing: border-box
 
 ul
   list-style-type: none
+  padding-left: 0
 
 body
   font-family: "helvetica", sans-serif
@@ -34,6 +36,7 @@ a
 .container
   width: 1170px
   margin: 0 auto
+  padding: 0
 
 .btn 
   font-size: 15px
@@ -51,6 +54,23 @@ a
   font-weight: 300
   color: #fff
   letter-spacing: 1.4px
+
+.upper-text 
+  text-transform: uppercase
+
+.btn-download 
+  display: flex
+  align-items: center
+  color: #edc887
+  font-size: 15px
+  font-weight: 400
+  letter-spacing: 0.9px
+
+  &:hover 
+    color: #edc887
+
+.btn-download__icon 
+  margin-right: 10px
 
 /********* header *********/
 
@@ -163,20 +183,127 @@ a
   top: 33%
   z-index: 1002
   cursor: pointer
-  background-color: rgba(0,0,0,0.25)
-  box-shadow: 0 0 30px rgba(0,0,0,0.2) inset
-  box-shadow: 0 0 200px #000
-  box-shadow: 0 0 150px #000
-  box-shadow: 0 0 100px #000
-  box-shadow: 0 0 50px #000
-  box-shadow: 0 0 30px #000
-  
+  background-color: rgba(0,0,0,0.3)
+  box-shadow:  0 0 100px 100px rgba(0, 0, 0, 0.3) 
 
 .swiper-prev 
   left: 26%
 
 .swiper-next
   left: 72.5%
+
+.swiper-pagination-bullet
+  width: 9px
+  height: 9px
+  border: 1px solid #ffffff
+  opacity: 0.15
+  
+.swiper-pagination-bullet-active
+  background-color: #edc887
+  border: 1px solid #edc887
+  opacity: 1
+
+/********* about *********/
+
+.about__title 
+  margin-bottom: 65px
+
+.about__text 
+  width: 690px
+  opacity: 0.6
+  color: #ffffff
+  font-size: 14px
+  font-weight: 300
+  line-height: 27px
+  letter-spacing: 0.84px
+  margin-bottom: 73px
+
+.excellence 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 20px
+
+.excellence__item 
+  width: 360px
+  display: flex
+
+.excellence__icon 
+  width: 63px
+  height: 63px
+  border: 1px solid rgba(255,255,255, 0.3)
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 30px
+  margin-bottom: 55px
+
+.excellence__text 
+  width: 228px
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  line-height: 30px
+  letter-spacing: 0.9px
+
+.excellence__text--long 
+  width: 240px
+
+.excellence__text--short 
+  width: 190px
+
+/********* montage *********/
+
+.montage__container 
+  padding-top: 90px
+
+.montage__title 
+  text-align: center
+  margin-bottom: 70px
+
+.montage__list 
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-bottom: 50px
+
+.montage__item 
+  width: 365px
+  display: flex
+
+.montage__number--short 
+  width: 348px
+
+.montage__item--long 
+  width: 410px
+
+.montage__number 
+  width: 32px
+  height: 32px
+  border: 1px solid rgba(255,255,255, 0.2)
+  border-radius: 50%
+  line-height: 31px
+  text-align: center
+  font-size: 15px
+  font-weight: 300
+  color: #edc887
+  letter-spacing: 0.6px
+  margin-right: 18px
+
+.montage__text 
+  width: 300px
+
+.montage__text--short 
+  width: 300px
+
+.montage__text--long 
+  width: 360px
+
+.montage__link 
+  width: 295px
+  margin: 0 auto 97px
+
 
 
 
