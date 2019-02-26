@@ -355,6 +355,36 @@ button:active {
 .excellence__text--short {
   width: 190px; }
 
+/********* facade *********/
+.facade {
+  background-image: url("../img/bg-facade.jpg");
+  background-repeat: no-repeat;
+  background-position: top left; }
+
+.choice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 97px; }
+
+.facade__btn {
+  margin-right: 36px; }
+
+.facade__title {
+  text-align: center;
+  margin-bottom: 64px; }
+
+.facade__subtitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 27px; }
+
+.fotos__item:hover {
+  border: 1px solid #edc887; }
+
 /********* samples *********/
 .samples__title {
   margin-bottom: 37px; }
@@ -470,8 +500,13 @@ button:active {
   margin: 0 auto 97px; }
 
 /********* contacts *********/
-.contacts__container {
-  padding-bottom: 40px; }
+.contacts {
+  background-image: url("../img/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-bottom: 90px; }
 
 .contacts__title {
   margin-bottom: 70px; }
@@ -480,7 +515,8 @@ button:active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 35px; }
 
 .contacts__item {
   color: #ffffff;
@@ -491,27 +527,7 @@ button:active {
   .contacts__item:hover {
     color: #ffffff; }
 
-/********* card *********/
-.card {
-  position: relative;
-  background-image: url("../img/bg-map.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-  padding-bottom: 90px; }
-
-.card__overlay {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 102%;
-  height: 102%;
-  background: rgba(25, 25, 25, 0.97); }
-
 .map {
-  position: relative;
-  z-index: 3;
   width: 870px;
   height: 440px; }
 
