@@ -162,7 +162,8 @@
 							</p>
 						</div>
 						<div class="fotos board__fotos">
-							<div class="fotos__item">
+							<label class="fotos__item">
+								<input type="radio" name="radio1" class="fotos__input" value="Wood1">
 								<img src="img/c11.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -172,8 +173,9 @@
 										структура под древесину кедровых пород
 									</p>
 								</div>
-							</div>
-							<div class="fotos__item">
+							</label>
+							<label class="fotos__item">
+								<input type="radio" name="radio1" class="fotos__input" value="Smooth1">
 								<img src="img/c12.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -183,7 +185,7 @@
 										слегка структурированная поверхность
 									</p>
 								</div>
-							</div>
+							</label>
 						</div>
 					</div>
 					<div class="board type__board">
@@ -196,7 +198,8 @@
 							</p>
 						</div>
 						<div class="fotos board__fotos">
-							<div class="fotos__item">
+							<label class="fotos__item">
+								<input type="radio" name="radio2" class="fotos__input" value="Wood2">
 								<img src="img/c21.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -206,8 +209,9 @@
 										структура под древесину кедровых пород
 									</p>
 								</div>
-							</div>
-							<div class="fotos__item">
+							</label>
+							<label class="fotos__item">
+								<input type="radio" name="radio2" class="fotos__input" value="Smooth2">
 								<img src="img/c22.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -217,9 +221,32 @@
 										слегка структурированная поверхность
 									</p>
 								</div>
-							</div>
+							</label>
 						</div>
 					</div>
+				</div>
+				<div class="tabs">
+					<ul class="tabs">
+						<li><a href="javascript:void(0);" rel = "tab-1" >Вкладка 1</a></li>
+						<li><a href="javascript:void(0);" rel = "tab-2">Вкладка 2</a></li>
+					</ul>
+					<ul class="tabs">
+						<li><a href="javascript:void(0);" rel = "tab-3">Вкладка 3</a></li>
+						<li><a href="javascript:void(0);" rel = "tab-4">Вкладка 4</a></li>
+					</ul>
+					<ul class="tabs">
+						<li><a href="javascript:void(0);" rel = "tab-5" >Вкладка 5</a></li>
+						<li><a href="javascript:void(0);" rel = "tab-6">Вкладка 6</a></li>
+					</ul>
+					<div class="tabs-cont">
+						<div class = "tab-content" id = "tab-1">Содердимое 1</div>
+						<div class = "tab-content d-none" id = "tab-2">Содердимое 2</div>
+						<div class = "tab-content d-none" id = "tab-3">Содердимое 3</div>
+						<div class = "tab-content d-none" id = "tab-4">Содердимое 4</div>
+						<div class = "tab-content d-none" id = "tab-5">Содердимое 5</div>
+						<div class = "tab-content d-none" id = "tab-6">Содердимое 6</div>
+					</div>
+						
 				</div>
 			</div>
 		</section>
@@ -232,9 +259,9 @@
 					<input type="text" name="name" required placeholder="Имя"  class="form__field">
 					<input type="text" name="tel" required placeholder="Телефон"  class="form__field">
 					<input type="text" name="email" required placeholder="Email"  class="form__field">
-					<input type="text" name="1" hidden>
-					<input type="text" name="2" hidden>
-					<input type="text" name="3" hidden>
+					<input type="text" name="1" id="radio1">
+					<input type="text" name="2"  id="radio2">
+					<input type="text" name="3"  id="boardType">
 					<button class="btn form__btn" data-submit>Отправить заявку</button>
 				</form>
 				<p class="samples__text">

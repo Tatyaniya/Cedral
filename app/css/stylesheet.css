@@ -382,8 +382,12 @@ button:active {
   letter-spacing: 0.6px;
   margin-bottom: 27px; }
 
-.fotos__item:hover {
-  border: 1px solid #edc887; }
+.fotos__item {
+  position: relative; }
+
+.fotos__input {
+  position: absolute;
+  left: -9999px; }
 
 /********* samples *********/
 .samples__title {
@@ -403,7 +407,8 @@ button:active {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  color: #ffffff; }
   .form__field:hover {
     border-bottom: 1px solid #edc887; }
   .form__field::-webkit-input-placeholder {
@@ -430,6 +435,14 @@ button:active {
     font-weight: 300;
     line-height: 32px;
     letter-spacing: 0.28px; }
+  .form__field:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .form__field:focus::-moz-placeholder {
+    color: transparent; }
+  .form__field:focus::-ms-input-placeholder {
+    color: transparent; }
+  .form__field:focus::placeholder {
+    color: transparent; }
 
 .samples__text {
   color: rgba(255, 255, 255, 0.2);
