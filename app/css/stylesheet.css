@@ -382,12 +382,39 @@ button:active {
   letter-spacing: 0.6px;
   margin-bottom: 27px; }
 
+.board {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.fotos__item {
+  margin-bottom: 24px; }
+
+.fotos__item--wood {
+  margin-right: 26px; }
+
+.board__title {
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: 0.76px;
+  margin-bottom: 20px; }
+
+.board__subtitle {
+  width: 300px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 26px;
+  letter-spacing: 0.84px; }
+
 .fotos__item {
   position: relative; }
 
-.fotos__input {
-  position: absolute;
-  left: -9999px; }
+.d-none {
+  display: none; }
 
 /********* samples *********/
 .samples__title {

@@ -25,7 +25,7 @@ $(function () {
       radio1[i].onchange = testRadio1;
     }
 
-    function testRadio1(){
+    function testRadio1(e){
       $('#radio1').val(this.value);
     }
 
@@ -33,32 +33,32 @@ $(function () {
       radio2[j].onchange = testRadio2;
     }
 
-    function testRadio2(){
+    function testRadio2(e){
       $('#radio2').val(this.value);
     }
     });
 
 
-  // табы
+    // табы
+    $('.tabs a').click(function(){
+        switch_tabs($(this));
+    });
+    
+    function switch_tabs(obj) {
+      var none = document.querySelectorAll('.tab-content');
+      
+      for (var i=0; i<none.length; i++) {
+        none[i].classList.add("d-none");
+      }
 
-  $('.tabs a').click(function(){
-      switch_tabs($(this));
-  });
-  
-  function switch_tabs(obj) {
-    var none = document.querySelectorAll('.tab-content');
+      var id = obj.attr("rel");
+      $('#'+id).removeClass("d-none");
 
-    for (var i=0; i<none.length; i++) {
-      none[i].classList.add("d-none");
+      var color = obj.attr("data-color");
+      $('#boardType').val(color);
     }
 
-    var id = obj.attr("rel");
-    $('#'+id).removeClass("d-none");
-
-    var color = obj.attr("data-color");
-
-    $('#boardType').val(color);
-  }
+  });
 
 });
 

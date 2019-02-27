@@ -39,25 +39,24 @@ $(function () {
     });
 
 
-  // табы
-
-  $('.tabs a').click(function(){
-      switch_tabs($(this));
-  });
-  
-  function switch_tabs(obj) {
-    var none = document.querySelectorAll('.tab-content');
+    // табы
+    $('.tabs a').click(function(){
+        switch_tabs($(this));
+    });
     
-    for (var i=0; i<none.length; i++) {
-      none[i].classList.add("d-none");
+    function switch_tabs(obj) {
+      var none = document.querySelectorAll('.tab-content');
+      
+      for (var i=0; i<none.length; i++) {
+        none[i].classList.add("d-none");
+      }
+
+      var id = obj.attr("rel");
+      $('#'+id).removeClass("d-none");
+
+      var color = obj.attr("data-color");
+      $('#boardType').val(color);
     }
-
-    var id = obj.attr("rel");
-    $('#'+id).removeClass("d-none");
-
-    var color = obj.attr("data-color");
-    $('#boardType').val(color);
-  }
 
 });
 
