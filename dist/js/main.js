@@ -39,25 +39,26 @@ $(function () {
     });
 
 
-    // табы
+  // табы
 
-    $('#tab-1').show(); $('.tabs a').click(function(){
+  $('.tabs a').click(function(){
       switch_tabs($(this));
   });
-  switch_tabs($('.defaulttab'));
   
   function switch_tabs(obj) {
+    var none = document.querySelectorAll('.tab-content');
 
-    var li = document.querySelectorAll('.tab-content');
-
-    console.log('li');
-    for (var i=0; i<li.length; i++) {
-      li[i].classList.add("d-none");
+    for (var i=0; i<none.length; i++) {
+      none[i].classList.add("d-none");
     }
-
 
     var id = obj.attr("rel");
     $('#'+id).removeClass("d-none");
+
+    var color = obj.attr("data-color");
+
+    $('#boardType').val(color);
   }
 
 });
+
