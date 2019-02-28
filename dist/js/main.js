@@ -58,7 +58,5 @@ $(function () {
       $('#boardType').val(color);
     }
 
-  });
-
 });
 

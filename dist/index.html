@@ -139,7 +139,7 @@
 							<img src="img/icon-pdf.png" alt="download" class="btn-download__img">
 						</div>
 						<p class="btn-download__text">
-							Скачать инструкцию по монтажу
+							Скачать буклет
 						</p>
 					</a>
 				</div>
@@ -162,8 +162,8 @@
 							</p>
 						</div>
 						<div class="fotos board__fotos">
-							<label class="fotos__item">
-								<input type="radio" name="radio1" class="d-none" value="Wood1">
+							<label class="fotos__item fotos__item--wood">
+								<input type="radio" name="radio1" class="fotos__input" value="Wood1">
 								<img src="img/c11.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -175,7 +175,7 @@
 								</div>
 							</label>
 							<label class="fotos__item">
-								<input type="radio" name="radio1" class="d-none" value="Smooth1">
+								<input type="radio" name="radio1" class="fotos__input" value="Smooth1">
 								<img src="img/c12.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -198,8 +198,8 @@
 							</p>
 						</div>
 						<div class="fotos board__fotos">
-							<label class="fotos__item">
-								<input type="radio" name="radio2" class="d-none" value="Wood2">
+							<label class="fotos__item fotos__item--wood">
+								<input type="radio" name="radio2" class="fotos__input" value="Wood2">
 								<img src="img/c21.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -211,7 +211,7 @@
 								</div>
 							</label>
 							<label class="fotos__item">
-								<input type="radio" name="radio2" class="d-none" value="Smooth2">
+								<input type="radio" name="radio2" class="fotos__input" value="Smooth2">
 								<img src="img/c22.jpg" alt="foto" class="fotos__img">
 								<div class="fotos__text">
 									<p class="fotos__title">
@@ -224,6 +224,44 @@
 							</label>
 						</div>
 					</div>
+				</div>
+
+				<!--------- color ---------->
+				<div class="color" id="color">
+					<p class="facade__subtitle">
+						2. Выберите цветовую гамму
+					</p>
+					<div class="minerals color__minerals">
+						<!-- 1 -->
+						<p class="color__title">
+							Группа «Минералы»
+						</p>
+						<ul class="color__list">
+							<li class="color__item">
+								<a href="javascript:void(0);" rel = "tab-1-1" data-color="Белый минерал" class="color__link">
+									<label  class="color__label">
+										<input type="radio" name="color" class="color__input">
+										<div class="color__content"></div>
+									</label>
+								</a>
+							</li>
+						</ul>
+						<!-- 2 -->
+						<p class="color__title">
+							Группа «Лес»
+						</p>
+						<ul class="color__list">
+							<li class="color__item">
+								<a href="javascript:void(0);" rel = "tab-2-1" data-color="Зимний лес" class="color__link">
+									<label  class="color__label">
+										<input type="radio" name="color" class="color__input">
+										<div class="color__content"></div>
+									</label>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
 				</div>
 				<div class="tabs">
 					<ul class="tabs">

@@ -40,12 +40,13 @@ $(function () {
 
 
     // табы
-    $('.tabs a').click(function(){
+    $('.color__link').click(function(){
         switch_tabs($(this));
+        console.log(this);
     });
     
     function switch_tabs(obj) {
-      var none = document.querySelectorAll('.tab-content');
+      var none = document.querySelectorAll('.tabs__item');
       
       for (var i=0; i<none.length; i++) {
         none[i].classList.add("d-none");
