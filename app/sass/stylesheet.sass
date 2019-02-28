@@ -42,6 +42,9 @@ a
   margin: 0 auto
   padding: 0
 
+button:focus
+  outline: none
+
 button:active
   outline: none
 
@@ -53,9 +56,15 @@ button:active
   color: #000
   background-color: #edc887
   border-radius: 0 5px
+  transition: all 0.25s linear
 
   &:hover 
     color: #000
+    background-color: #b69865
+
+  &:active 
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.6) inset
+  
 
 .title2 
   font-size: 35px
@@ -106,9 +115,10 @@ button:active
 
 .phone 
   color: #fff
+  transition: color 0.3s linear
 
   &:hover 
-    color: #fff
+    color: rgba(255, 255, 255, 0.6)
     
 .offer__container 
   padding-top: 235px
@@ -138,9 +148,12 @@ button:active
   opacity: 0.4
   letter-spacing: 0.9px
   position: relative
+  border-bottom: 1px solid transparent
+  transition: all 0.3s linear
 
   &:hover 
     color: #edc887
+    border-bottom: 1px solid #edc887
 
   &:after 
     position: absolute
@@ -419,13 +432,6 @@ button:active
 
 .tabs__text 
   margin-bottom: 20px
-
-  
-  
-  
-  
-  
-/*******  tabs  ********/ 
   
 .d-none 
   display: none
@@ -441,7 +447,7 @@ button:active
 .form__field 
   width: 270px
   background: transparent
-  border: none
+  border: 1px solid transparent
   outline: none
   border-bottom: 1px solid rgba(255, 255, 255, .5)
   margin-right: 30px
@@ -468,6 +474,77 @@ button:active
   font-size: 10px
   line-height: 32px
   letter-spacing: 0.2px
+
+/********  form  ********/
+
+#loader 
+  position: fixed
+  left: 0px
+  top: 0px
+  width: 100%
+  height: 100%
+  background: rgba(240, 240, 240, 0.91);
+  overflow: hidden
+  display: none;
+  z-index: 113
+
+#loader img 
+  position: absolute
+  width: 50px
+  height: 50px
+  left: 50%
+  margin-left: -25px
+  top: 50%
+  margin-top: -25px
+
+#overlay 
+  display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  background: #000c
+  left: 0px;
+  top: 0px
+  cursor: pointer
+  z-index: 1000
+
+#thx 
+  background: #fff
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  padding: 30px
+  font-size: 21px
+  color: #191919
+
+.js-form 
+  position: relative
+
+label.error 
+  font-size: 12px
+  color: red
+  position: absolute
+
+#name-error 
+  top: 32px
+  left: 3%
+
+#tel-error 
+  top: 32px
+  left: 29.5%
+
+#email-error 
+  top: 32px
+  left: 56.5%
+
+input.error 
+    position: relative
+    border: 1px solid red
+
+input.valid 
+    border: 1px solid green
 
 /********* montage *********/
 

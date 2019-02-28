@@ -26,10 +26,10 @@
 					<h1 class="offer__title">
 						Красивый и долговечный фасад для вашего дома
 					</h1>
-					<a href="#" class="btn offer__btn">
+					<a href="#create-facade" class="create-facade btn offer__btn">
 						Выбрать фасад
 					</a>
-					<a href="#" class="more offer__more">
+					<a href="#about" class="more offer__more">
 						Узнать больше
 					</a>
 				</div>
@@ -131,7 +131,7 @@
 		<section class="facade" id="facade">
 			<div class="container facade__container">
 				<div class="choice">
-					<a href="#" class="btn facade__btn">
+					<a href="#create-facade" class="create-facade btn facade__btn">
 						Выбрать фасад
 					</a>
 					<a href="#" class="btn-download facade__link">
@@ -143,7 +143,7 @@
 						</p>
 					</a>
 				</div>
-				<h2 class="title2 facade__title">
+				<h2 class="title2 facade__title" id="create-facade">
 					Создайте свой фасад
 				</h2>
 
@@ -1305,10 +1305,10 @@
 					<input type="text" name="name" required placeholder="Имя"  class="form__field">
 					<input type="text" name="tel" required placeholder="Телефон"  class="form__field">
 					<input type="text" name="email" required placeholder="Email"  class="form__field">
-					<input type="text" name="1" id="radio1" hidden>
-					<input type="text" name="2"  id="radio2" hidden>
-					<input type="text" name="3"  id="boardType" hidden>
-					<button class="btn form__btn" data-submit>Отправить заявку</button>
+					<input type="text" name="radioS1" id="radio1" hidden>
+					<input type="text" name="radioS2"  id="radio2" hidden>
+					<input type="text" name="color"  id="boardType" hidden>
+					<button class="btn form__btn" data-submit data-parent>Отправить заявку</button>
 				</form>
 				<p class="samples__text">
 					Нажимая на кнопку “Отправить заявку” вы соглашаетесь с политикой конфиденциальности
@@ -1400,7 +1400,16 @@
 			</div>
 		</footer>
 	</div>
+	<div id="loader">
+        <img src="img/ripple.svg" alt="ripple">
+    </div>
+    <div id="overlay">
+        <div id="thx">
+            Спасибо! Мы с вами свяжемся.
+        </div>
+    </div>
 	<script src="js/libs.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

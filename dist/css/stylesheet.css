@@ -163,9 +163,12 @@ button:active {
           justify-content: space-between; }
 
 .phone {
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear; }
   .phone:hover {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.6); }
 
 .offer__container {
   padding-top: 235px;
@@ -204,9 +207,14 @@ button:active {
   color: #edc887;
   opacity: 0.4;
   letter-spacing: 0.9px;
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
   .more:hover {
-    color: #edc887; }
+    color: #edc887;
+    border-bottom: 1px solid #edc887; }
   .more:after {
     position: absolute;
     top: 81px;
@@ -404,11 +412,17 @@ button:active {
   line-height: 26px;
   letter-spacing: 0.84px; }
 
+.fotos__img {
+  border: 1px solid transparent; }
+
 .fotos__item {
+  cursor: pointer;
   position: relative;
   margin-bottom: 24px; }
   .fotos__item input {
     display: none; }
+    .fotos__item input:checked + .fotos__img {
+      border: 1px solid #edc887; }
 
 .fotos__item--wood {
   margin-right: 26px; }
@@ -435,7 +449,10 @@ button:active {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border: 1px solid transparent; }
+  .fotos__text:hover {
+    border: 1px solid #edc887; }
 
 .fotos__title {
   color: #ffffff;
@@ -446,7 +463,83 @@ button:active {
 .fotos__subtitle {
   letter-spacing: 0.84px; }
 
-/*******  tabs  ********/
+/*******  color  ********/
+.color {
+  margin-bottom: 33px; }
+
+.color__link {
+  cursor: pointer;
+  font-family: "helvetica", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.52px;
+  color: rgba(255, 255, 255, 0.6); }
+  .color__link:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.color__title {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  margin-bottom: 24px; }
+
+.color__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.color__img {
+  border: 1px solid transparent; }
+  .color__img:hover {
+    border: 1px solid #edc887; }
+
+.color__label {
+  cursor: pointer; }
+  .color__label input {
+    display: none; }
+    .color__label input:checked + .color__content > .color__foto > .color__img {
+      border: 1px solid #edc887; }
+
+.color__foto {
+  width: 108px;
+  height: 100px;
+  margin-bottom: 10px; }
+
+.color__text {
+  width: 110px; }
+
+.color__item--last {
+  width: 108px; }
+
+/*-------- tabs --------*/
+.look {
+  margin-bottom: 60px; }
+
+.tabs__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.tabs__left,
+.tabs__right {
+  width: 49%; }
+
+.tabs__left {
+  margin-bottom: 20px; }
+
+.tabs__text {
+  margin-bottom: 20px; }
+
 .d-none {
   display: none; }
 
@@ -510,6 +603,77 @@ button:active {
   font-size: 10px;
   line-height: 32px;
   letter-spacing: 0.2px; }
+
+/********  form  ********/
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 240, 240, 0.91);
+  overflow: hidden;
+  display: none;
+  z-index: 113; }
+
+#loader img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px; }
+
+#overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000c;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 1000; }
+
+#thx {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  padding: 30px;
+  font-size: 21px;
+  color: #191919; }
+
+.js-form {
+  position: relative; }
+
+label.error {
+  font-size: 12px;
+  color: red;
+  position: absolute; }
+
+#name-error {
+  top: 32px;
+  left: 3%; }
+
+#tel-error {
+  top: 32px;
+  left: 28%; }
+
+#email-error {
+  top: 32px;
+  left: 58.5%; }
+
+input.error {
+  position: relative;
+  border: 1px solid red !important; }
+
+input.valid {
+  border: 1px solid green !important; }
 
 /********* montage *********/
 .montage__container {

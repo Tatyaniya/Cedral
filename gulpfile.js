@@ -94,6 +94,12 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 
+	var buildPhp = gulp.src('app/*.php') // Переносим php в продакшен
+	.pipe(gulp.dest('dist'));
+
+	var buildXls = gulp.src('app/*.xls') // Переносим xls в продакшен
+	.pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('clear', function (callback) {
