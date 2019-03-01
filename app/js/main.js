@@ -15,6 +15,12 @@ $(function () {
             nextEl: '.swiper-next',
             prevEl: '.swiper-prev',
           },
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            }
+          }
       });
 
     // выбор типа доски и передача в скрытый инпут
@@ -42,7 +48,6 @@ $(function () {
     // табы
     $('.color__link').click(function(){
         switch_tabs($(this));
-        console.log(this);
     });
     
     function switch_tabs(obj) {

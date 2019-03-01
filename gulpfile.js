@@ -100,6 +100,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildXls = gulp.src('app/*.xls') // Переносим xls в продакшен
 	.pipe(gulp.dest('dist'));
 
+	var buildPdf = gulp.src('app/*.pdf') // Переносим pdf в продакшен
+	.pipe(gulp.dest('dist'));
+
 });
 
 gulp.task('clear', function (callback) {

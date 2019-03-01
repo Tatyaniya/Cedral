@@ -23,8 +23,8 @@ $message_to_myemail = "Текст письма:
 Имя: $name<br>
 Телефон: $tel<br>
 E-mail: $email<br>
-Выбор 1: $radioS1<br>
-Выбор 2: $radioS2<br>
+Фактура 1: $radioS1<br>
+Фактура 2: $radioS2<br>
 Цвет: $color<br>
 Источник (ссылка): $refferer
 ";

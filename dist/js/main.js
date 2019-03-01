@@ -15,6 +15,12 @@ $(function () {
             nextEl: '.swiper-next',
             prevEl: '.swiper-prev',
           },
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            }
+          }
       });
 
     // выбор типа доски и передача в скрытый инпут
@@ -158,4 +164,21 @@ $(function () {
       valEl($(this));
 
   });
+
+
+  //плавняа прокрутка
+  $(".more").click( e => {
+    e.preventDefault();
+    elementClick = $(e.currentTarget).attr("href");
+    destination = $(elementClick).offset().top;
+    $("body,html").animate({scrollTop: destination }, 800);
+  });
+
+  $(".create-facade").click( e => {
+    e.preventDefault();
+    elementClick = $(e.currentTarget).attr("href");
+    destination = $(elementClick).offset().top;
+    $("body,html").animate({scrollTop: destination }, 800);
+  });
+
 });
