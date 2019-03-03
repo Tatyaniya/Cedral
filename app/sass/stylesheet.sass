@@ -2,11 +2,8 @@
 @import "fonts"
 @import "vars"
 
-/*$white: #ffffff*/
-
 h1, h2, h3, h4, h5, h6, span, p
 	margin: 0
-  padding: 0
 
 *
 	box-sizing: border-box
@@ -651,10 +648,13 @@ input.valid
   margin-right: 38px
 
   &:hover
-    color: #ffffff
+    color: rgba(255, 255, 255, 0.6)
+    transition: color 0.4s ease
 
 .contacts__addr
   display: flex
+  &:hover
+    color: #ffffff
 
 .fa-map-marker-alt 
 	margin-right: 13px

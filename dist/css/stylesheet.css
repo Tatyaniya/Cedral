@@ -47,7 +47,6 @@
   src: url("../fonts/FontAwesome/Black/fa-solid-900.eot");
   src: url("../fonts/FontAwesome/Black/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/Black/fa-solid-900.woff") format("woff"), url("../fonts/FontAwesome/Black/fa-solid-900.ttf") format("truetype"); }
 
-/*$white: #ffffff*/
 h1, h2, h3, h4, h5, h6, span, p {
   margin: 0;
     margin-padding: 0; }
