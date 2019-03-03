@@ -19,6 +19,9 @@
 	.board__subtitle 
 		width: 100%
 		margin-bottom: 20px
+	.tabs 
+		width: 100%
+		height: 300px
 	.montage__list
 		margin-bottom: 20px
 	.montage__item 
@@ -61,6 +64,8 @@
 		margin-bottom: 12px
 	.color__item--last 
 		display: none
+	.tabs
+		height: 240px
 	.tabs__left, 
 	.tabs__right 
     	width: 49.5%
@@ -125,7 +130,7 @@
 	.swiper-container 
 		height: 400px
 	.swiper-slide-active
-		transform: scale(0)
+		transform: scale(1)
 		margin-top: 0
 	.swiper-prev,
 	.swiper-next
@@ -150,6 +155,8 @@
 		width: 80%
 	.color__text
 		text-align: center
+	.tabs
+		height: 670px
 	.tabs__item
 		flex-direction: column
 		align-items: center
@@ -170,6 +177,10 @@
 	.montage__item--long
 		width: 359px
 
+@media only screen and (max-width: 767px)
+  .tabs 
+    height: 535px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
 	.choice 
@@ -182,6 +193,10 @@
 	#tel-error,
 	#email-error  
 		left: 28.5%
+
+@media only screen and (max-width : 500px)
+	.tabs 
+    height: 490px
 
 @media only screen and (max-width : 480px)
 	.offer__container
@@ -217,6 +232,8 @@
 		text-align: center
 	.color__item 
 		width: 50%
+	.tabs 
+    height: 425px
 	.tabs__left, 
 	.tabs__right 
     	width: 300px

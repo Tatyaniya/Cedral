@@ -18,7 +18,6 @@ $(function () {
           breakpoints: {
             768: {
               slidesPerView: 1,
-              spaceBetween: 10
             }
           }
       });
@@ -46,6 +45,10 @@ $(function () {
 
 
     // табы
+
+    $('#tab11').css('opacity', '1');
+
+    
     $('.color__link').click(function(){
         switch_tabs($(this));
     });
@@ -53,7 +56,7 @@ $(function () {
     function switch_tabs(obj) {
       var none = document.querySelectorAll('.tabs__item');
       
-      for (var i=0; i<none.length; i++) {
+     /* for (var i=0; i<none.length; i++) {
         none[i].classList.add("d-none");
       }
 
@@ -61,7 +64,20 @@ $(function () {
       $('#'+id).removeClass("d-none");
 
       var color = obj.attr("data-color");
+      $('#boardType').val(color);*/
+      for (var i=0; i<none.length; i++) {
+        $(none[i]).css('opacity', '0');
+      }
+
+      var id = obj.attr("rel");
+
+      setTimeout(function () {  
+        $('#'+id).css('opacity', '1');
+         }, 2);      
+
+      var color = obj.attr("data-color");
       $('#boardType').val(color);
+      
     }
 
     //Валидация и отправка формы
