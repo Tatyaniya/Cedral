@@ -126,6 +126,12 @@ button:active {
 .upper-text {
   text-transform: uppercase; }
 
+.btn-download__text {
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
 .btn-download {
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,6 +147,8 @@ button:active {
   letter-spacing: 0.9px; }
   .btn-download:hover {
     color: #edc887; }
+    .btn-download:hover .btn-download__text {
+      border-bottom: 1px solid #edc887; }
 
 .btn-download__icon {
   margin-right: 10px; }
@@ -544,7 +552,7 @@ button:active {
 
 .tabs {
   width: 1140px;
-  height: 340.3em;
+  height: 340.3px;
   position: relative; }
 
 .tabs__item {
