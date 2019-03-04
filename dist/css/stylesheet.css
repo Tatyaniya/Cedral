@@ -48,8 +48,7 @@
   src: url("../fonts/FontAwesome/Black/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/Black/fa-solid-900.woff") format("woff"), url("../fonts/FontAwesome/Black/fa-solid-900.ttf") format("truetype"); }
 
 h1, h2, h3, h4, h5, h6, span, p {
-  margin: 0;
-    margin-padding: 0; }
+  margin: 0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -808,13 +807,18 @@ input.valid {
   letter-spacing: 0.32px;
   margin-right: 38px; }
   .contacts__item:hover {
-    color: #ffffff; }
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease; }
 
 .contacts__addr {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .contacts__addr:hover {
+    color: #ffffff; }
 
 .fa-map-marker-alt {
   margin-right: 13px; }
